@@ -6,8 +6,12 @@
 trigger:
 - main
 
+# pool:
+#   name: default
 pool:
-  name: default
+  vmImage: 'ubuntu-latest'
+
+
 
 variables:
 - name: DEV_ENVIRONMENT
