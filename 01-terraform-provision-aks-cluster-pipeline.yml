@@ -9,6 +9,13 @@ trigger:
 pool:
   name: default
 
+variables:
+- name: DEV_ENVIRONMENT
+  value: dev
+- name: QA_ENVIRONMENT
+  value: qa  
+
+
 stages:
 - stage: TerraformValidate
   jobs:
