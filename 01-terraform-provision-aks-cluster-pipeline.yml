@@ -60,7 +60,7 @@ stages:
     - deployment: DeployDevAKSCluster
       displayName: DeployDevAKSCluster
       pool:
-        name: default
+        vmImage: 'ubuntu-latest'
       environment: $(DEV_ENVIRONMENT)
       strategy:
         runOnce:
@@ -108,7 +108,7 @@ stages:
       dependsOn: DeployDevAKSCluster
       displayName: DeployQAAKSCluster
       pool:
-        name: default
+        vmImage: 'ubuntu-latest'
       environment: $(QA_ENVIRONMENT)
       strategy:
         runOnce:
